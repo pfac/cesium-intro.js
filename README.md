@@ -1,7 +1,7 @@
-Forging JS
-==========
+Intro.js
+========
 
-Slides of the talk given [@minho.rb](http://www.meetup.com/Minho-rb/), during the special meetup for [Semana da Lei 2014](http://cesium.github.io/SDL14/).
+Slides of the talk given @cesium. Powered by @vilt-group.
 
 ## About
 
@@ -11,4 +11,4 @@ These slides were built using [reveal.js](https://github.com/hakimel/reveal.js).
 
 All modified code is licensed under the MIT license. See LICENSE for more information. Copyright (C) 2014 Pedro Costa
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Forging JS</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="pfac.github.io/forging.js" property="cc:attributionName" rel="cc:attributionURL">Pedro Costa</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Intro.js</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="pfac.github.io/forging.js" property="cc:attributionName" rel="cc:attributionURL">Pedro Costa</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.
