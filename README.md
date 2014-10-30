@@ -1,7 +1,7 @@
 Intro.js
 ========
 
-Slides of the talk given @cesium. Powered by @vilt-group.
+Slides of the talk given [@cesium](http://github.com/cesium). Powered by [@viltgroup](https://github.com/viltgroup).
 
 ## About
 
