@@ -39,50 +39,111 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Forging JS</h1>
-					<p>Javascript development tips, tricks and best-practices</p>
-					<p class="author">by <a href="https://twitter.com/iampfac">Pedro Costa</a><br>
-						<a href="https://twitter.com/iampfac"><img class="logo" src="images/twitter.png" /><code>@iampfac</code></a>
-						<a href="https://github.com/pfac"><img class="logo" src="images/github.png" /><code>@pfac</code></a>
-						<a href="https://bitbucket.com/pfac"><img class="logo" src="images/bitbucket.png" /><code>@pfac</code></a>
-					</p>
-				</section>
-
-				<section>
-					<h2>Spoiler alert!</h2>
-					<ul>
-						<li>Intro for newbies</li>
-						<li>Patterns</li>
-						<li>Prototypes</li>
-						<li>Best-practices</li>
-					</ul>
-				</section>
-
-				<section>
 					<section>
-						<h2>Objects</h2>
+						<h1>Intro.js</h1>
+						<p>Javascript for the masses</p>
+						<p class="author">by <a href="https://twitter.com/iampfac">Pedro Costa</a><br>
+							<a href="mailto:pedro.costa@vilt-group.com"><code>pedro.costa@vilt-group.com</code></a><br>
+							<a href="https://twitter.com/iampfac"><img class="logo" src="images/twitter.png" /><code>@iampfac</code></a>
+							<a href="https://github.com/pfac"><img class="logo" src="images/github.png" /><code>@pfac</code></a>
+						</p>
 					</section>
 
 					<section>
-						<h3>State</h3>
-						<p>Variables</p>
-						<hr/>
-						<h3>Behaviour</h3>
-						<p>Functions</p>
-					</section>
-
-					<section>
-						<h3>Encapsulation</h3>
-					</section>
-
-					<section>
-						<h3>Namespaces</h3>
+						<h2>Powered by VILT</h2>
+						<img src="images/vilt.png" style="height: 200px">
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>Javascript</h2>
+						<h2>Spoiler alert!</h2>
+					</section>
+
+					<section>
+						<h3>This is for the noobs</h3>
+						<img class="full" src="images/noob.jpg">
+					</section>
+
+					<section>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is Javascript?</h2>
+					</section>
+
+					<section>
+						<h3>It is NOT Java!</h2>
+						<img src="images/not-java.png" class="full">
+					</section>
+
+					<section>
+						<h3>Not JUST for the web</h3>
+						<img src="images/what.gif" class="full">
+					</section>
+
+					<section>
+						<h3>Runs on "engines"</h3>
+						<ul>
+							<li>SpiderMonkey <img src="images/firefox.png" class="logo"></li>
+							<li>Rhino <img src="images/java.png" class="logo"></li>
+							<li>V8 <img src="images/chrome.png" class="logo"> &amp; <img src="images/opera.png" class="logo"></li>
+							<li>JavaScriptCore <img src="images/safari.png" class="logo"></li>
+							<li>Chakra <img src="images/ie.png" class="logo"></li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Syntax &amp; Features</h2>
+					</section>
+
+					<section>
+						<h3>Types</h3>
+						<pre>
+							<code class="javascript">// Boolean
+true == false
+
+// Number + number = Number
+1 + 1.0
+
+// String + string = String
+"Pedro Costa"
+
+// Object + Object = NaN
+{ nome: "Pedro", apelido: "Costa" }
+
+// Function + function = String
+function fullName(firstName, secondName) {
+    return firstName + secondName
+}
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h2>Variables</h2>
+						<pre>
+							<code class="javascript">
+// Global
+name = "Pedro" + " " + "Costa" 
+
+// Global
+var age = 24;
+
+function f() {
+	// Scoped
+	var job = {
+		degree: "Software Engineer"
+	}
+}
+
+							</code>
+						</pre>
 					</section>
 
 					<section>
@@ -131,10 +192,6 @@
 
 					<section>
 						<h3>Pure Javascript<br>vs<br>jQuery/Prototype/<small>whatever</small></h3>
-					</section>
-
-					<section>
-						<h3>JSLint vs Closure Compiler</h3>
 					</section>
 				</section>
 
