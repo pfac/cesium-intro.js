@@ -41,17 +41,17 @@
 				<section>
 					<section>
 						<h1>Intro.js</h1>
-						<p>Javascript for the masses</p>
+						<p style="color:yellow">Refurbished</p>
 						<p class="author">by <a href="https://twitter.com/iampfac">Pedro Costa</a><br>
-							<a href="mailto:pedro.costa@vilt-group.com"><code>pedro.costa@vilt-group.com</code></a><br>
+							<a href="mailto:pedro@subvisual.co"><code>pedro@subvisual.co</code></a><br>
 							<a href="https://twitter.com/iampfac"><img class="logo" src="images/twitter.png" /><code>@iampfac</code></a>
 							<a href="https://github.com/pfac"><img class="logo" src="images/github.png" /><code>@pfac</code></a>
 						</p>
 					</section>
 
 					<section>
-						<h2>Powered by VILT</h2>
-						<img src="images/vilt.png" style="height: 200px">
+						<h2>Powered by Subvisual</h2>
+						<img src="images/subvisual.png" style="height: 300px">
 					</section>
 				</section>
 
@@ -63,9 +63,6 @@
 					<section>
 						<h3>This is for the noobs</h3>
 						<img class="full" src="images/noob.jpg">
-					</section>
-
-					<section>
 					</section>
 				</section>
 
@@ -130,7 +127,7 @@ function fullName(firstName, secondName) {
 						<pre>
 							<code class="javascript">
 // Global
-name = "Pedro" + " " + "Costa" 
+name = "Pedro" + " " + "Costa"
 
 // Global
 var age = 24;
@@ -152,10 +149,37 @@ function f() {
 
 					<section>
 						<h3>Prototypal</h3>
-					</section>
+						<code class="javascript">
+f = function(){}
 
+// Each function has a prototype
+f.prototype.add = function(x,y){ return x+y; }
+
+// Constructors === functions
+a = new f() // {}
+
+// Objects inherit from the constructor prototype
+a.add(1,2) // 3
+						</code>
+					</section>
 					<section>
 						<h3>The Prototype Chain</h3>
+						<code class="javascript">
+// Object is the at the top of the chain
+Object.prototype.mult = function(x,y){ return x*y; }
+
+// All objects inherit from Object.prototype
+a.mult(2,3) // 6
+
+// Object.create automatically changes the prototype
+g = function(){};
+g.prototype = Object.create(f.prototype)
+
+// g.prototype --> f.prototype --> Function.prototype --> Object.prototype
+b = new g();
+b.add(5,5) // 10
+b.mult(5,5) // 25
+						</code>
 					</section>
 				</section>
 
