@@ -102,7 +102,8 @@
 					<section>
 						<h3>Types</h3>
 						<pre>
-							<code class="javascript">// Boolean
+							<code class="javascript">
+// Boolean
 true == false
 
 // Number + number = Number
@@ -138,7 +139,6 @@ function f() {
 		degree: "Software Engineer"
 	}
 }
-
 							</code>
 						</pre>
 					</section>
@@ -149,39 +149,150 @@ function f() {
 
 					<section>
 						<h3>Prototypal</h3>
-						<code class="javascript">
-f = function(){}
+						<pre>
+							<code class="javascript">
+	f = function(){}
 
-// Each function has a prototype
-f.prototype.add = function(x,y){ return x+y; }
+	// Each function has a prototype
+	f.prototype.add = function(x,y){ return x+y; }
 
-// Constructors === functions
-a = new f() // {}
+	// Constructors === functions
+	a = new f() // {}
 
-// Objects inherit from the constructor prototype
-a.add(1,2) // 3
-						</code>
+	// Objects inherit from the constructor prototype
+	a.add(1,2) // 3
+							</code>
+						</pre>
 					</section>
 					<section>
 						<h3>The Prototype Chain</h3>
-						<code class="javascript">
-// Object is the at the top of the chain
-Object.prototype.mult = function(x,y){ return x*y; }
+						<pre>
+							<code class="javascript">
+	// Object is the at the top of the chain
+	Object.prototype.mult = function(x,y){ return x*y; }
 
-// All objects inherit from Object.prototype
-a.mult(2,3) // 6
+	// All objects inherit from Object.prototype
+	a.mult(2,3) // 6
 
-// Object.create automatically changes the prototype
-g = function(){};
-g.prototype = Object.create(f.prototype)
+	// Object.create automatically changes the prototype
+	g = function(){};
+	g.prototype = Object.create(f.prototype)
 
-// g.prototype --> f.prototype --> Function.prototype --> Object.prototype
-b = new g();
-b.add(5,5) // 10
-b.mult(5,5) // 25
-						</code>
+	// g.prototype --> f.prototype
+	// --> Function.prototype --> Object.prototype
+	b = new g();
+	b.add(5,5) // 10
+	b.mult(5,5) // 25
+							</code>
+						</pre>
 					</section>
 				</section>
+
+				<!-- <section>
+					<section>
+						<h2>ES6</h2>
+						<p><small>Or ES2015</small></p>
+					</section>
+
+					<section>
+						<h3>Arrows</h3>
+						<p><code>=></code></p>
+						<pre>
+							<code class="javascript">
+	// inline
+	var next = (x => x + 1)
+
+	// multiline
+	var sum = (x,y) => {
+		return x + y
+	}
+
+	// lexical this and function shortcut
+	var author = {
+	  name: 'Pedro Costa',
+	  twitter: '@iampfac',
+	  toString() {
+	    return this.name + ' <' + this.twitter + '>'
+	  }
+	}
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h3>Classes</h3>
+						<p><code>"aleluia"</code></p>
+						<pre>
+							<code class="javascript">
+	class Square extends Shape {
+
+	  // Constructors
+	  constructor(size) {
+	    super(size, size, size, size);
+	    //...
+	  }
+
+	  //...
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h3>Classes</h3>
+						<p><code>"aleluia"</code></p>
+						<pre>
+							<code class="javascript">
+	class Square extends Shape {
+	  //...
+
+	  // reference to super
+	  perimeter() {
+	    return super.perimeter();
+	  }
+
+	  //...
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h3>Classes</h3>
+						<p><code>"aleluia"</code></p>
+						<pre>
+							<code class="javascript">
+	class Square extends Shape {
+	  //...
+
+	  // getters & setters
+	  get color() {
+	    return this._color;
+	  }
+	  set color(value) {
+	    this._color = value;
+	  }
+
+	  //...
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h3>Classes</h3>
+						<p><code>"aleluia"</code></p>
+						<pre>
+							<code class="javascript">
+	class Square extends Shape {
+	  //...
+
+	  // static methods
+	  static sides() {
+	    return 4;
+	  }
+	}
+							</code>
+						</pre>
+					</section>
+				</section> -->
 
 				<section>
 					<section>
@@ -189,7 +300,7 @@ b.mult(5,5) // 25
 					</section>
 
 					<section>
-						<h2>Immediately-Invoked Function Expression</h2>
+						<h3>Immediately-Invoked Function Expression</h3>
 					</section>
 
 					<section>
@@ -292,6 +403,10 @@ b.mult(5,5) // 25
 						<dd><a href="http://javascript.crockford.com/prototypal.html">http://javascript.crockford.com/prototypal.html</a></dd>
 						<dt>Addy Osmani</dt>
 						<dd><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns</a></dd>
+						<dt>Mozilla Developer Network</dt>
+						<dd>
+							<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">Inheritance with the prototype chain</a>
+						</dd>
 					</dl>
 				</section>
 
